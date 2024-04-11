@@ -5,7 +5,7 @@ const AllPokemons = () => {
     const[pokemons, setPokemon] = useState(null);
 
     useEffect (() => {
-        fetch("https://pokebuildapi.fr/api/v1/pokemon/")
+        fetch("https://pokebuildapi.fr/api/v1/pokemon")
         .then((response) => {
           return response.json();
         })
@@ -22,7 +22,7 @@ const AllPokemons = () => {
                 {   !pokemons ? <p>Pokémons en cours de chargement</p> :
                     pokemons.map((pokemon) => {
                         return (
-                            <p>pokemon.name</p>        
+                            <p key = {pokemon.id}>{pokemon.name}</p>        
                             );
                     })
                 } 
