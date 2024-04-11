@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 const AllPokemons = () => {
 
@@ -22,7 +23,10 @@ const AllPokemons = () => {
                 {   !pokemons ? <p>Pokémons en cours de chargement</p> :
                     pokemons.map((pokemon) => {
                         return (
-                            <p key = {pokemon.id}>{pokemon.name}</p>        
+                            <article>
+                                <p key = {pokemon.id}>{pokemon.name}</p> 
+                                <Link to={`/pokemon-details/${pokemon.id}`}>Voir le détail du pokemon</Link>
+                            </article>    
                             );
                     })
                 } 
