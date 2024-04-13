@@ -15,7 +15,6 @@ const AllPokemons = () => {
         });
     }, [])
     
-
     return (
         <section>
             <h2 id = "AllPokemons-title">Liste de tout les pokémons</h2>
@@ -23,8 +22,8 @@ const AllPokemons = () => {
                 {   !pokemons ? <p>Pokémons en cours de chargement</p> :
                     pokemons.map((pokemon) => {
                         return (
-                            <article>
-                                <p key = {pokemon.id}>{pokemon.name}</p> 
+                            <article key = {pokemon.id}>
+                                <p>{pokemon.name}</p> 
                                 <Link to={`/pokemon-details/${pokemon.id}`}>Voir le détail du pokemon</Link>
                             </article>    
                             );
