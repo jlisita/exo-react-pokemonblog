@@ -6,6 +6,7 @@ import PokemonDetailsPage from './pages/PokemonDetailsPage';
 import PokemonsByTypePage from './pages/PokemonsByTypePage';
 import RandomTypePage from './pages/RandomTeamPage';
 import SearchPokemonPage from './pages/SearchPokemonPage';
+import PokemonsByResistancePage from './pages/PokemonsByResistancePage';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/pokemons-by-type/:type"  element = {<PokemonsByTypePage/>}/>
           <Route path="/random-team"  element = {<RandomTypePage/>}/>
           <Route path="/search-pokemon"  element = {<SearchPokemonPage/>}/>
+          <Route path="/pokemons-by-resistance/:resistance"  element = {<PokemonsByResistancePage/>}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -15,9 +15,8 @@ const SearchPokemon = () => {
         .then((data) => {
             setPokemon(data)
         });
-    
     };
-    
+
     return(
         <>
             <form action="" onSubmit={handleSearch}>

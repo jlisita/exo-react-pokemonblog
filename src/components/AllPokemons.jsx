@@ -28,6 +28,8 @@ const AllPokemons = () => {
                                 <Link to={`/pokemon-details/${pokemon.id}`}>Voir le détail du pokemon</Link>
                                 <p>Type: {pokemon.apiTypes[(pokemon.apiTypes.length)-1].name}</p>
                                 <Link to={`/pokemons-by-type/${pokemon.apiTypes[(pokemon.apiTypes.length)-1].name}`}>Voir tout les pokémons de ce type</Link>
+                                <br/>
+                                <Link to={`/pokemons-by-resistance/${pokemon.apiTypes[(pokemon.apiTypes.length)-1].name}`}>Voir tout les pokémons resitant à ce type</Link>
                             </article>    
                             );
                     })
