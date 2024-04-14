@@ -7,6 +7,8 @@ const Header = () => {
         <nav>
             <ul>
                 <Link to="/">Accueil</Link>
+                <Link to="/random-team">Team</Link>
+                <Link to="/search-pokemon">Search</Link>
             </ul>
         </nav>
     </header>

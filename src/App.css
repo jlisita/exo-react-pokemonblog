@@ -41,3 +41,28 @@
 .read-the-docs {
   color: #888;
 }
+
+header {
+  max-height: 150px;
+}
+nav ul
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a 
+{
+  color: white;
+  padding: 0px 20px;
+  font-size: 20px; 
+  border-right:solid 1px white;
+  font-weight: 600;
+}
+
+nav a:last-child
+{
+  border: none; 
+}
