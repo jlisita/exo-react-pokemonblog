@@ -27,7 +27,7 @@ const PokemonsByType = () => {
             return (
                 <article key = {pokemon.id}>
                     <p>{pokemon.name}</p> 
-                    <p>Type: {pokemon.apiTypes[(pokemon.apiTypes.length)-1].name}</p>
+                    <img src={pokemon.image} alt={`image du pokemon ${pokemon.name}`} width = "80" />
                 </article>    
                     )
             })}

@@ -23,6 +23,7 @@ const AllPokemons = () => {
                     pokemons.map((pokemon) => {
                         return (
                             <article key = {pokemon.id}>
+                                <img src={pokemon.image} alt={`image du pokemon ${pokemon.name}`} width = "80" />
                                 <p>{pokemon.name}</p> 
                                 <Link to={`/pokemon-details/${pokemon.id}`}>Voir le détail du pokemon</Link>
                                 <p>Type: {pokemon.apiTypes[(pokemon.apiTypes.length)-1].name}</p>
