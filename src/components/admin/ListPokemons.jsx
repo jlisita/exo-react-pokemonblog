@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const ListPokemons = () => 
 {
-
     const[pokemons, setPokemon] = useState(null);
 
     useEffect (() => {
@@ -16,26 +15,39 @@ const ListPokemons = () =>
         });
     }, [])
 
+    const handleDeletePokemon = (event, pokemonId) => {
+
+        fetch("https://pokebuildapi.fr/api/v1/pokemon" + pokemonId, {method:"DELETE"})
+    };
+
         return (
             <>
                 <h2>liste des Pokémons</h2>
-                <table>
-                    <tr>
-                        <td>pokemon</td><td>Action</td>
-                    </tr>
-                { !pokemons ? <p>En cours de chargement</p> :
-                pokemons.map((pokemon) => 
-                {
-                return (
-                    <article key = {pokemon.id}>
-                        <tr>
-                            <td><p>{pokemon.name}</p></td>
-                            <td><button>modifier</button><button>supprimer</button></td>
-                        </tr>
-                        
-                    </article>)
-                })}
-                </table>            
+
+                    { pokemons ? 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>pokemon</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        {pokemons.map((pokemon) => 
+                        {
+                        return (
+                            <tr key = {pokemon.id}>
+                                <td><p>{pokemon.name}</p></td>
+                                <td>
+                                    <button>modifier</button>
+                                    <button onClick={(event) => handleDeletePokemon(event,pokemon.id)}>supprimer</button>
+                                </td>
+                            </tr>     
+                        )})}
+                    </tbody> 
+                    </table>   : 
+                    <p>pokemons en cours de chargement</p>
+                    }         
             </>
         )
 };
