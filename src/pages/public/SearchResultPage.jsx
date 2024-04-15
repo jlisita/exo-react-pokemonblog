@@ -1,6 +1,6 @@
-import SearchResult from "../components/SearchResult";
-import Header from "../components/Header";
-import Footer from "../components/Footer"
+import SearchResult from "../../components/public/SearchResult";
+import Header from "../../components/public/Header";
+import Footer from "../../components/public/Footer"
 
 const SearchResultPage = () => {
 

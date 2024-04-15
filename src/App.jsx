@@ -1,13 +1,14 @@
 import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from "./pages/HomePage";
-import PokemonDetailsPage from './pages/PokemonDetailsPage';
-import PokemonsByTypePage from './pages/PokemonsByTypePage';
-import RandomTypePage from './pages/RandomTeamPage';
-import SearchPokemonPage from './pages/SearchPokemonPage';
-import PokemonsByResistancePage from './pages/PokemonsByResistancePage';
-import SearchResultPage from './pages/SearchResultPage';
+import HomePage from "./pages/public/HomePage";
+import PokemonDetailsPage from './pages/public/PokemonDetailsPage';
+import PokemonsByTypePage from './pages/public/PokemonsByTypePage';
+import RandomTypePage from './pages/public/RandomTeamPage';
+import SearchPokemonPage from './pages/public/SearchPokemonPage';
+import PokemonsByResistancePage from './pages/public/PokemonsByResistancePage';
+import SearchResultPage from './pages/public/SearchResultPage';
+import ListPokemonsAdminPage from './pages/admin/ListPokemonsAdminPage';
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/pokemons-by-resistance/:resistance"  element = {<PokemonsByResistancePage/>}/>
           <Route path="/random-team"  element = {<RandomTypePage/>}/>
           <Route path="/search/:pokemonName"  element = {<SearchResultPage/>}/>
+          <Route path="/admin/pokemons"  element = {<ListPokemonsAdminPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

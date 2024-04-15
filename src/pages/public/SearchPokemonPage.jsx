@@ -1,6 +1,6 @@
-import SearchPokemon from "../components/SearchPokemon";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import SearchPokemon from "../../components/public/SearchPokemon";
+import Header from "../../components/public/Header";
+import Footer from "../../components/public/Footer";
 
 const SearchPokemonPage = () => {
 

@@ -1,6 +1,6 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PokemonsByResistance from "../components/PokemonsByResistance";
+import Header from "../../components/public/Header";
+import Footer from "../../components/public/Footer";
+import PokemonsByResistance from "../../components/public/PokemonsByResistance";
 
 const PokemonsByResistancePage = () => {
 

@@ -1,6 +1,6 @@
-import Header from "../components/Header"
-import PokemonDetails from "../components/PokemonDetails"
-import Footer from "../components/Footer"
+import Header from "../../components/public/Header"
+import PokemonDetails from "../../components/public/PokemonDetails"
+import Footer from "../../components/public/Footer"
 
 const PokemonDetailsPage = () => {
     return(

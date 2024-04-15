@@ -1,6 +1,6 @@
-import RandomTeam from "../components/RandomTeam";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import RandomTeam from "../../components/public/RandomTeam";
+import Header from "../../components/public/Header";
+import Footer from "../../components/public/Footer";
 
 
 const RandomTypePage = () => {
