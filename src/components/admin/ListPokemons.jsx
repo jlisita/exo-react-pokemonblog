@@ -20,6 +20,11 @@ const ListPokemons = () =>
         fetch("https://pokebuildapi.fr/api/v1/pokemon" + pokemonId, {method:"DELETE"})
     };
 
+    const handleModifyPokemon = (event, pokemonId) => {
+
+
+    };
+
         return (
             <>
                 <h2>liste des Pokémons</h2>
@@ -39,7 +44,7 @@ const ListPokemons = () =>
                             <tr key = {pokemon.id}>
                                 <td><p>{pokemon.name}</p></td>
                                 <td>
-                                    <button>modifier</button>
+                                    <Link to={`/admin/pokemons/update/${pokemon.id}`} >Modifier</Link>
                                     <button onClick={(event) => handleDeletePokemon(event,pokemon.id)}>supprimer</button>
                                 </td>
                             </tr>     
