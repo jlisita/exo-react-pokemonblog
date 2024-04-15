@@ -11,6 +11,7 @@ import SearchResultPage from './pages/public/SearchResultPage';
 import ListPokemonsAdminPage from './pages/admin/ListPokemonsAdminPage';
 import CreatePokemonPage from './pages/admin/CreatePokemonPage';
 import UpdatePokemonPage from './pages/admin/UpdatePokemonPage';
+import LoginPage from './pages/public/LoginPage';
 
 const App = () => {
 
@@ -26,6 +27,8 @@ const App = () => {
           <Route path="/pokemons-by-resistance/:resistance"  element = {<PokemonsByResistancePage/>}/>
           <Route path="/random-team"  element = {<RandomTypePage/>}/>
           <Route path="/search/:pokemonName"  element = {<SearchResultPage/>}/>
+          <Route path="/login"  element = {<LoginPage/>}/>
+          
           <Route path="/admin/pokemons"  element = {<ListPokemonsAdminPage/>}/>
           <Route path="/admin/pokemons/create"  element = {<CreatePokemonPage/>}/>
           <Route path="/admin/pokemons/update/:pokemonId"  element = {<UpdatePokemonPage/>}/>

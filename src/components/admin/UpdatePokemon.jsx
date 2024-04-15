@@ -39,19 +39,23 @@ const UpdatePokemon = () =>
         <>
             {
                 !pokemon ? <p>Pokemon en cours de chargement</p> : 
-                <form onSubmit={handleUpdatePokemon}>
-                    <div>
-                        <label htmlFor="name">Nom</label>
-                        <input type="text" id = "name" name = "name" defaultValue = {pokemon.name}/>
-                    </div>
-                    <div>
-                        <label htmlFor="name">Génération</label>
-                        <input type="text" id = "generation" name = "generation" defaultValue = {pokemon.apiGeneration}/>
-                    </div>
-                    <div>
-                        <input type = "submit" />
-                    </div>
-                </form>
+                <section>
+                    <h2>Pokemon à modifier</h2>
+                    <form onSubmit={handleUpdatePokemon}>
+                        <div>
+                            <label htmlFor="name">Nom: </label>
+                            <input type="text" id = "name" name = "name" defaultValue = {pokemon.name}/>
+                        </div>
+                        <div>
+                            <label htmlFor="name">Génération: </label>
+                            <input type="text" id = "generation" name = "generation" defaultValue = {pokemon.apiGeneration}/>
+                        </div>
+                        <div>
+                            <input type = "submit" />
+                        </div>
+                    </form>
+                </section>
+
             }
         </>
     );

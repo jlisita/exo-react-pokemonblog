@@ -16,6 +16,7 @@ const Header = () => {
         <nav>
             <ul>
                 <Link to="/">Accueil</Link>
+                <Link to="/login">Login</Link>
                 <Link to="/random-team">Team</Link>
                 <Link to="/search-pokemon">Search</Link>
                 <Link to="/admin/pokemons/create">Créer Pokemon</Link>

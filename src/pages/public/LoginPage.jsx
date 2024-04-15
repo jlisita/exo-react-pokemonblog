@@ -1,16 +1,16 @@
-import UpdatePokemon from "../../components/admin/UpdatePokemon";
+import Login from "../../components/public/Login"
 import Header from "../../components/public/Header";
 import Footer from "../../components/public/Footer";
 
-const UpdatePokemonPage = () => 
-{
-    return (
+const LoginPage = () => {
+
+    return(
         <>
             <Header/>
-            <UpdatePokemon/>
+            <Login/>
             <Footer/>
         </>
     );
 };
 
-export default UpdatePokemonPage;
+export default LoginPage;
