@@ -18,6 +18,8 @@ const Header = () => {
                 <Link to="/">Accueil</Link>
                 <Link to="/random-team">Team</Link>
                 <Link to="/search-pokemon">Search</Link>
+                <Link to="/admin/pokemons/create">Créer Pokemon</Link>
+                <Link to="/admin/pokemons">Administrer pokémons</Link>
             </ul>
         </nav>
 

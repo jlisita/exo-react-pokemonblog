@@ -29,7 +29,7 @@ const UpdatePokemon = () =>
       });
 
     fetch("https://pokebuildapi.fr/api/v1/pokemon/" + pokemonId,{
-        method: "POST",
+        method: "PATCH",
         body: json,
       });
 
